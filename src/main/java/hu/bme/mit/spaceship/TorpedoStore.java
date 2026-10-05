@@ -41,7 +41,7 @@ public class TorpedoStore {
 
     if (r >= FAILURE_RATE) {
       // successful firing
-      this.torpedoCount -= numberOfTorpedos;
+      this.torpedoCount -= numberOfTorpedos; //I reduce the number of the torpedos
       success = true;
     } else {
       // simulated failure
