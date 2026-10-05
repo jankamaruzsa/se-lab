@@ -13,7 +13,7 @@ public class TorpedoStore {
   private double FAILURE_RATE = 0.0; //NOSONAR
 
   private int torpedoCount = 0;
-  private final Random generator = new Random();
+  private final Random generator = new Random(); //I use this here, to not to generate in all of the periods again
 
   public TorpedoStore(int numberOfTorpedos){
     this.torpedoCount = numberOfTorpedos;
